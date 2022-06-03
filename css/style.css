@@ -1,0 +1,148 @@
+/*
+* Importacion de las fuentes
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,100&display=swap');
+
+/*
+* Formateo de las cajas
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/*
+* Header del sitio Web
+*/
+header{
+    display: flex;
+    background-color: #222831;
+    justify-content: space-around;
+    padding: 1rem 0;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 15%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header__logo{
+    color: #eee;
+    font-weight: 600;
+}
+
+.nav__list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.nav__item{
+    margin: 0 8px;
+}
+
+.nav__link{
+    padding: 10px;
+    color: #eeee;
+    font-size: 0.9rem;
+    font-weight: 500;
+    /* Opcional */
+    border-radius: 5px;
+}
+/* Opcional */
+.nav__link:hover{
+    background-color: #00adb5;
+}
+
+/* ************************* */
+
+.header__toggle,
+.header__close{
+    display: none;
+}
+
+/* 
+    Adaptacion a dispositvos moviles
+*/
+@media screen and ( max-width: 768px ){
+    
+    header{
+        height: 48px;
+        justify-content: space-between;
+        padding: 0 28px;
+    }
+
+    .logo a{
+        font-size: 0.9rem;
+    }
+
+    .logo img{
+        width: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .header__toggle{
+        display: inline;
+        color: #eeee;
+        font-size: 33px;
+    }
+    .header__close{
+        position: absolute;
+        right: 24px;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+    }
+
+    .header__close:hover{
+        background-color: #00adb5;
+    }
+
+    .nav{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #222831;
+        color: #eee;
+        width: 60%;
+        height: 100vh;
+        padding: 24px 0;
+        z-index: 100;
+        transition: 0.5s;
+        border-radius: 0 0 0 50%;
+    }
+
+    .nav__list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav__item{
+        margin: 2rem 0;
+    }
+
+    .show{
+        right: 0;
+    }
+}
