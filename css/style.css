@@ -16,7 +16,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-a{
+nav ul li a{
     text-decoration: none;
 }
 
@@ -49,6 +49,7 @@ header{
 .header__logo{
     color: #eee;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .nav__list{
