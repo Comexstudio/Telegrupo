@@ -29,7 +29,7 @@ ul{
 */
 header{
     display: flex;
-    background-color: #222831;
+    background-color: #ffffff;
     justify-content: space-around;
     padding: 1rem 0;
     align-items: center;
@@ -42,12 +42,11 @@ header{
 
 .logo img{
     width: 15%;
-    border-radius: 50%;
     margin-right: 10px;
 }
 
 .header__logo{
-    color: #eee;
+    color: rgb(0, 0, 0);
     font-weight: 600;
     text-decoration: none;
 }
@@ -64,18 +63,10 @@ header{
 
 .nav__link{
     padding: 10px;
-    color: #eeee;
+    color: rgba(0, 0, 0, 0.933);
     font-size: 0.9rem;
-    font-weight: 500;
-    /* Opcional */
-    border-radius: 5px;
+    font-weight: 600;
 }
-/* Opcional */
-.nav__link:hover{
-    background-color: #00adb5;
-}
-
-/* ************************* */
 
 .header__toggle,
 .header__close{
@@ -83,9 +74,23 @@ header{
 }
 
 /* 
+    Body
+*/
+.container__body{
+    height: 553px;
+    background-color: rgba(16,62,111,255);
+    width: 70%;
+    border-radius: 0px 0 70px 0%;
+}
+
+/* 
     Adaptacion a dispositvos moviles
 */
 @media screen and ( max-width: 768px ){
+
+    .nav__link{
+        color: white;
+    }
     
     header{
         height: 48px;
@@ -99,13 +104,12 @@ header{
 
     .logo img{
         width: 30px;
-        border-radius: 50%;
         margin-right: 10px;
     }
 
     .header__toggle{
         display: inline;
-        color: #eeee;
+        color: black;
         font-size: 33px;
     }
     .header__close{
