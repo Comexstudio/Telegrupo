@@ -33,7 +33,16 @@ header{
     justify-content: space-around;
     padding: 1rem 0;
     align-items: center;
+    /* position: relative;
+    width: 100%;
+    z-index: 100; */
 }
+
+/* #header{
+    position: relative;
+    width: 100%;
+    z-index: 100;
+} */
 
 .logo{
     display: flex;
@@ -98,7 +107,7 @@ header{
 .container__body__section{
     color: white;
     padding-top: 45px;
-    padding-right: 20px;
+    margin-right: -189px;
 }
 .img_c{
     height: 464px;
@@ -231,7 +240,11 @@ header{
 @media screen and ( max-width: 768px ){
 
 
-
+    .container__body__section{
+        color: white;
+        padding-top: 45px;
+        margin-right: 0px;
+    }
     .container__body_{
         display: none;
     }
