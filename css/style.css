@@ -76,11 +76,23 @@ header{
 /* 
     Body
 */
-.container__body{
+
+.container__body_{
     display: flex;
     justify-content: center;
-    background-color: #103e6f;
+    background-image: linear-gradient(245deg, #6f7d9f 0, #0f3d6f 50%, #000041 100%);
+    border-radius: 0px 0 40px 0;
+    height: 685px;
+    width: 75%;
+}
+.container__body{
+    display: flex;
+    justify-content: space-evenly;;
+    background-color: transparent;
     height: 400px;
+    position: relative;
+    z-index: 5;
+    bottom: 577px;
 }
 
 .container__body__section{
@@ -89,18 +101,18 @@ header{
     padding-right: 20px;
 }
 .img_c{
-    height: 355px;
+    height: 464px;
     padding-top: 51px;
     padding-left: 20px;
     border-radius: 90px 0 40px 0;
 }
 .servicios_text_h{
-    margin-bottom: 1.5rem;
-    font-size: 35px;
+    margin-bottom: 50px;
+    font-size: 55px;
 }
 
 .servicios_text_p{
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .botones{
@@ -220,6 +232,10 @@ header{
 
 
 
+    .container__body_{
+        display: none;
+    }
+
     .container__img{
         display: flex;
         justify-content: center;
@@ -237,6 +253,7 @@ header{
 
     .servicios_text_h{
         text-align: center;
+        font-size: 40px;
     }
 
     .container__body__section{
@@ -246,7 +263,9 @@ header{
     .container__body{
         display: flex;
         flex-direction: column;
-        padding-top: 200px;
+        padding-top: 445px;
+        position: unset;
+        background-image: linear-gradient(245deg, #6f7d9f 0, #0f3d6f 50%, #000041 100%);
     }
 
     .servicios__h1{
