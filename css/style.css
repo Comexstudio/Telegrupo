@@ -128,8 +128,8 @@ header{
 }
 
 /* From uiverse.io by @namecho */
-    button,
-    button::after {
+    .btn__inicio,
+    .btn__inicio::after {
     padding: 9px 20px;
     font-size: 18px;
     background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
@@ -142,7 +142,7 @@ header{
     position: relative;
     }
 
-    button::after {
+    .btn__inicio::after {
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
     --slice-2: inset(50% -6px 30% 0);
@@ -161,7 +161,7 @@ header{
     clip-path: var(--slice-0);
     }
 
-    button:hover::after {
+    .btn__inicio:hover::after {
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
     }
@@ -240,11 +240,41 @@ header{
     height: 330px;
 }
 
+.container-remoto{
+    width: 30%;
+}
+
+.container__h1{
+    margin-bottom: 1.5rem;
+}
 
 /* 
+    Aside
+*/
+
+#carosel__img{
+    object-fit: cover;
+}
+.carousel-inner{
+    height: 600px;
+}
+.aside__carosel{
+    position: relative;
+    bottom: 235px
+}
+
+/*
     Adaptacion a dispositvos moviles
 */
 @media screen and ( max-width: 768px ){
+
+    .aside__carosel{
+        top: 395px;
+    }
+    .container-remoto{
+        width: 100%;
+    }
+    
 
     .container__p{
         text-align: start;
