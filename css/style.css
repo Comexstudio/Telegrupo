@@ -87,7 +87,7 @@ header{
 }
 .container__body{
     display: flex;
-    justify-content: space-evenly;;
+    justify-content: center;
     background-color: transparent;
     height: 400px;
     position: relative;
@@ -98,7 +98,6 @@ header{
 .container__body__section{
     color: white;
     padding-top: 45px;
-    margin-right: -189px;
 }
 .img_c{
     height: 464px;
@@ -224,11 +223,58 @@ header{
     }
     }
 
+/* 
+    Section segundo
+*/
+.container-img{
+    padding-right: 100px;
+}
+.container__section{
+    display: flex;
+    justify-content: center;
+    bottom: 315px;
+    position: relative;
+}
+
+.img__servicios{
+    height: 330px;
+}
+
 
 /* 
     Adaptacion a dispositvos moviles
 */
 @media screen and ( max-width: 768px ){
+
+    .container__p{
+        text-align: start;
+    }
+
+    .container__h1{
+        text-align: center;
+        padding-top: 10px;
+        font-size: 25px;
+        font-weight: 590;
+        padding-bottom: 15px;
+    }
+
+    .container-img{
+        padding-right: 0px;
+    }
+
+    .container__section{
+        top: 422px;
+        top: 331px;
+    }
+
+    .img__servicios{
+        width: 100%;
+    }
+
+    .container__section{
+        bottom: 0px;
+        flex-direction: column-reverse;
+    }
 
 
     .container__body__section{
@@ -247,7 +293,11 @@ header{
 
     .img_c{
         padding-left: 0px;
-        width: 100%;
+        width: 99%;
+        height: 313px;
+        object-fit: cover;
+        border-radius: 31px 25px 40px 0;
+        padding-top: 3px;
     }
 
     .servicios_text_p{
