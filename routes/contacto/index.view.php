@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--- ICO ---->
-    <link rel="shorcut icon" type="image/x-icon" href="../assets/img/ico.png">
+    <link rel="shorcut icon" type="image/x-icon" href="../../assets/img/ico.png">
     <!--- Estilos ---->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/formulario.css">
     <!--- Estilos Bootstrap ---->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Telegrupo │ Inicio </title>
+    <title>Telegrupo │ Contacto </title>
 </head>
 <body>
 
@@ -18,19 +19,19 @@
     <header>
         <!--- Logotipo --->
         <div class="logo">
-            <img src="../assets/logo.png" alt="Logotipo">
-            <a href="../index.html" class="header__logo">TELEGRUPO</a>
+            <img src="../../assets/logo.png" alt="Logotipo">
+            <a href="../../index.html" class="header__logo">TELEGRUPO</a>
         </div>
         <!--- Navegador --->
         <nav class="nav" id="nav-menu">
             <ion-icon name="close-outline" class="header__close" id="close-menu"></ion-icon>
             <!--- Menu --->
             <ul class="nav__list">
-                <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
-                <li class="nav__item"><a href="../routes/sobre.html" class="nav__link">Sobre</a></li>
-                <li class="nav__item"><a href="../routes/habilidades.html" class="nav__link">Habilidades</a></li>
-                <li class="nav__item"><a href="../routes/servicios.html" class="nav__link">Servicios</a></li>
-                <li class="nav__item"><a href="../routes/contacto.html" class="nav__link">Contacto</a></li>
+                <li class="nav__item"><a href="../../index.html" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="../../routes/sobre.html" class="nav__link">Sobre</a></li>
+                <li class="nav__item"><a href="../../routes/habilidades.html" class="nav__link">Habilidades</a></li>
+                <li class="nav__item"><a href="../../routes/servicios.html" class="nav__link">Servicios</a></li>
+                <li class="nav__item"><a href="../../routes/contacto.html" class="nav__link">Contacto</a></li>
             </ul>
         </nav>
         <!--- Icono de cerrar ---->
@@ -38,11 +39,11 @@
     </header>
 
     <!--- Body ---->
-    <section class="container__body"> 
+
         
             <section class="contacto" id="contact_">
                 <div class="contenedorc">
-                    <h3 class="titulo">Contacto</h3>
+                    <h3 class="titulo">Formulario de Contacto</h3>
 
                     <form method="post" action="enviar.php" class="formulario">
 
@@ -56,10 +57,9 @@
                 </div>
             </section>
             
-    </section>
 
     <!---- Scripts --->
-    <script src="../js/main.js"></script>
+    <script src="../../js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!--- Scripts Bootstrap --->
