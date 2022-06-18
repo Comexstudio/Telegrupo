@@ -60,7 +60,40 @@
 
     <!---- Mapa Ubicacion ----->
     <div id="map"></div>
-            
+
+
+        <!-- Pie de pagina --->
+        <div class="footer-dark">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Servicios</h3>
+                            <ul>
+                                <li><a href="#">Ejemplo</a></li>
+                                <li><a href="#">Ejemplo</a></li>
+                                <li><a href="#">Ejemplo</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Telegrupo</a></li>
+                                <li><a href="#">Equipo</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 item text">
+                            <h3>Telegrupo</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis deleniti reiciendis repudiandae nisi et nemo atque fuga voluptates vel at architecto reprehenderit, mollitia cum, optio aliquam expedita corporis id eveniet.</p>
+                        </div>
+                        <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                    </div>
+                    <p class="copyright">Telegrupo © 2022</p>
+                </div>
+            </footer>
+        </div>
+        
 
     <!---- Scripts --->
     <script src="../../js/main.js"></script>
