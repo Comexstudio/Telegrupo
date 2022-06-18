@@ -56,10 +56,18 @@
 
                 </div>
             </section>
+
+
+    <!---- Mapa Ubicacion ----->
+    <div id="map"></div>
             
 
     <!---- Scripts --->
     <script src="../../js/main.js"></script>
+    <!---- Api de maps --->
+    <script src="../../js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnInWAxY1G6X2NubLdlPofyPRzghF7EWA&callback=iniciarMap"></script>
+    <!---- Api de iconos --->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!--- Scripts Bootstrap --->
