@@ -47,7 +47,7 @@
 
                     <form method="post" action="enviar.php" class="formulario">
 
-                        <input type="text" placeholder="Nombre" nombre="nombre" required>
+                        <input type="text" placeholder="Nombre" name="nombre" required>
                         <input type="text" placeholder="Correo" name="email" required>
                         <textarea type="text" name="mensaje" placeholder="Mensaje" required></textarea>
                         
