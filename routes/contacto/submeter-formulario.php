@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,32 +8,30 @@
     <!--- ICO ---->
     <link rel="shorcut icon" type="image/x-icon" href="../assets/img/ico.png">
     <!--- Estilos ---->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/formulario.css">
     <!--- Estilos Bootstrap ---->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Telegrupo │ Contacto </title>
 </head>
 <body>
-
-
-
     <!--- Head ---->
     <header>
         <!--- Logotipo --->
         <div class="logo">
-            <img src="../assets/logo.png" alt="Logotipo">
-            <a href="../index.html" class="header__logo">TELEGRUPO</a>
+            <img src="../../assets/logo.png" alt="Logotipo">
+            <a href="../../index.html" class="header__logo">TELEGRUPO</a>
         </div>
         <!--- Navegador --->
         <nav class="nav" id="nav-menu">
             <ion-icon name="close-outline" class="header__close" id="close-menu"></ion-icon>
             <!--- Menu --->
             <ul class="nav__list">
-                <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
-                <li class="nav__item"><a href="../routes/sobre.html" class="nav__link">Sobre</a></li>
-                <li class="nav__item"><a href="../routes/habilidades.html" class="nav__link">Habilidades</a></li>
-                <li class="nav__item"><a href="../routes/servicios.html" class="nav__link">Servicios</a></li>
-                <li class="nav__item"><a href="../routes/contacto.html" class="nav__link">Contacto</a></li>
+                <li class="nav__item"><a href="../../index.html" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="../../routes/sobre.html" class="nav__link">Sobre</a></li>
+                <li class="nav__item"><a href="../../routes/habilidades.html" class="nav__link">Habilidades</a></li>
+                <li class="nav__item"><a href="../../routes/servicios.html" class="nav__link">Servicios</a></li>
+                <li class="nav__item"><a href="../../routes/contacto.html" class="nav__link">Contacto</a></li>
             </ul>
         </nav>
         <!--- Icono de cerrar ---->
@@ -43,6 +40,30 @@
     
   </head>
   <body>  
+  <?php 
+
+        $myemail = 'anyele98@gmail.com';
+        $name = $_POST['introducir_nombre'];
+        $email = $_POST['introducir_email'];
+        $telefono = $_POST['introducir_telefono'];
+        $website = $_POST['introducir_website'];
+        $asunto = $_POST['introducir_asunto'];
+        $message = $_POST['introducir_mensaje'];
+
+        $to = $myemail;
+        $email_subject = "Nuevo mensaje: $subject";
+        $email_body = "Haz recibido un nuevo mensaje del sitio web Telegrupo. 
+        \n Nombre: $name 
+        \n Correo: $email 
+        \n Telefono: \n $telefono
+        \n Website: \n $website
+        \n Asunto: \n $asunto
+        \n Mensaje: \n $message";
+        $headers = "From: $email";
+
+        mail($to, $email_subject, $email_body, $headers);
+
+?>
     
 
     <section class="container__body_">
@@ -100,7 +121,7 @@
                     <label for="mensaje" class="colocar_mensaje">Mensaje
                       <span class="obligatorio">*</span>
                     </label>                     
-                                      <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
                                   </p>                    
                 
                   <button class="btn__enviar" type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
@@ -132,7 +153,8 @@
 
 
     <!---- Scripts --->
-    <script src="../js/main.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/alert.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!--- Scripts Bootstrap --->
